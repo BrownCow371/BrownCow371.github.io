@@ -1,10 +1,10 @@
 # Site settings
-title: 
+title: Web Developer in Progress
 header-img: img/home-bg.png
 email: jmbrowncow@gmail.com
 copyright_name: BrownCow371
 description: > # this means to ignore newlines until "baseurl:"
-  
+  My journey to becoming a Web Developer through Flatiron School.
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  BrownCow371
