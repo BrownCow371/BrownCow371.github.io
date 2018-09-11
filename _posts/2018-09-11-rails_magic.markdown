@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Rails Magic!"
-date:       2018-09-11 16:38:14 +0000
+title:      "Rails Magic - Ruby on Rails Project"
+date:       2018-09-11 12:38:15 -0400
 permalink:  rails_magic
 ---
 
