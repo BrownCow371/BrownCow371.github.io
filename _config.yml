@@ -1,15 +1,14 @@
 # Site settings
+author: Jamie Brown
 title: Web Developer in Progress
 header-img: img/home-bg.png
 email: jmbrowncow@gmail.com
-copyright_name: BrownCow371
+copyright_name: Jamie Brown
 description: > # this means to ignore newlines until "baseurl:"
   My journey to becoming a Web Developer through Flatiron School.
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  BrownCow371
-learn_profile: BrownCow371
-email_username: jmbrowncow@gmail.com
 
 # Build settings
 markdown: kramdown
