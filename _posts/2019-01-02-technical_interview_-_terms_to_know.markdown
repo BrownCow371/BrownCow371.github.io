@@ -92,7 +92,7 @@ I recently completed my mock technical interview and was faced with answering ra
 * [https://www.codementor.io/michelre/currying-in-javascript-g6212s8qv](https://www.codementor.io/michelre/currying-in-javascript-g6212s8qv)
 * [https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8](https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8)
 
-***Object-Oriented Programming/Constructor Functions*** – use upper case to define the constructor function. Use “new” keyword to create a new object of the same type. 
+***Object-Oriented Programming/Constructor Functions*** – a constructor function is one that you would use the“new” keyword to invoke/create a new object of the same type. You typically declare the function name with uppercase word. 
 * [https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 * [https://scotch.io/tutorials/object-oriented-programming-in-javascript](https://scotch.io/tutorials/object-oriented-programming-in-javascript)
 * [https://www.w3schools.com/js/js_object_constructors.asp](https://www.w3schools.com/js/js_object_constructors.asp)
