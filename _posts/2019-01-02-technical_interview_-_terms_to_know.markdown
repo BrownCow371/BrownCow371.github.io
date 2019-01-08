@@ -48,7 +48,7 @@ I recently completed my mock technical interview and was faced with answering ra
 ***Callbacks*** – functions passed into other functions as arguments
 * [https://developer.mozilla.org/en-US/docs/Glossary/Callback_function](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
 
-***Var/Let/Const*** – var declarations are globally scope when a var variable is declared outside of a function or within a block (var variables are not block-scoped). A var variable is function scoped if declared inside a function.  Var variables can be re-declared and updated (can call var greeter twice without an error). Let and const variables cannot be re-declared. They are both block scoped. They also will throw an error if they are declared after they are used in a function (they are still hoisted, but not initialized).  You cannot declare a const variable without also assigning it (it cannot be updated). . 
+***Var/Let/Const*** – `var` declarations are globally scope when a `var `variable is declared outside of a function or within a block (`var` variables are not block-scoped). A `var` variable is function scoped if declared inside a function.  `var` variables can be re-declared and updated (can call `var greeter `twice without an error). `let` and `const` variables cannot be re-declared. They are both block scoped. They also will throw an error if they are declared after they are used in a function (they are still hoisted, but not initialized).  You cannot declare a `const` variable without also assigning it (it cannot be updated). . 
 * [https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e](https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e)
 * [https://dzone.com/articles/javascript-difference-between-var-let-and-const-ke](https://dzone.com/articles/javascript-difference-between-var-let-and-const-ke)
 * [https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75](https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75)
@@ -59,7 +59,7 @@ I recently completed my mock technical interview and was faced with answering ra
 * [https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
 * [https://medium.freecodecamp.org/javascript-closures-simplified-d0d23fa06ba4](https://medium.freecodecamp.org/javascript-closures-simplified-d0d23fa06ba4)
 
-***Equality Operator***  – there are two types…` == ` and `===`. `===` is strict comparison and only true if the values are the same type and the contents match. Type converting comparison `==` will convert the values to the same type before comparing (so “1” and 1 would be `==` but not `===`). 
+***Equality Operator***  – there are two types…`== ` and `===`. `===` is strict comparison and only true if the values are the same type and the contents match. Type converting comparison `==` will convert the values to the same type before comparing (so “1” and 1 would be `==` but not `===`). 
 * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
 * [https://www.w3schools.com/js/js_comparisons.asp](https://www.w3schools.com/js/js_comparisons.asp)
 
@@ -92,13 +92,13 @@ I recently completed my mock technical interview and was faced with answering ra
 * [https://www.codementor.io/michelre/currying-in-javascript-g6212s8qv](https://www.codementor.io/michelre/currying-in-javascript-g6212s8qv)
 * [https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8](https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8)
 
-***Object-Oriented Programming/Constructor Functions*** – a constructor function is one that you would use the“new” keyword to invoke/create a new object of the same type. You typically declare the function name with uppercase word. 
+***Object-Oriented Programming/Constructor Functions*** – a constructor function is one that you would use the `new` keyword to invoke/create a new object of the same type. You typically declare the function name with an uppercase word. 
 * [https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 * [https://scotch.io/tutorials/object-oriented-programming-in-javascript](https://scotch.io/tutorials/object-oriented-programming-in-javascript)
 * [https://www.w3schools.com/js/js_object_constructors.asp](https://www.w3schools.com/js/js_object_constructors.asp)
 * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)
 
-***Context Binding (call, apply, bind)***  – all three are used to control the invocation context of a function – call() and apply() allow you to specify the context (“this”) and immedialtu invoke the function with that value. The difference between the two is that apply() only takes two argument, the value you want to pass for “this” and an array of arguments to pass to the function. Bind() returns a context-bound version of the original function. 
+***Context Binding (call, apply, bind)***  – all three are used to control the invocation context of a function – `call()` and `apply()` allow you to specify the context (“this”) and immediately invoke the function with that value. The difference between the two is that `apply()` only takes two argument, the value you want to pass for “this” and an array of arguments to pass to the function. `bind()` returns a context-bound version of the original function. 
 * [https://www.codementor.io/niladrisekhardutta/how-to-call-apply-and-bind-in-javascript-8i1jca6jp](https://www.codementor.io/niladrisekhardutta/how-to-call-apply-and-bind-in-javascript-8i1jca6jp)
 * [https://thenewstack.io/mastering-javascript-callbacks-bind-apply-call/](https://thenewstack.io/mastering-javascript-callbacks-bind-apply-call/)
 
@@ -120,11 +120,11 @@ I recently completed my mock technical interview and was faced with answering ra
 > The scope of a variable is controlled by the location of the variable declaration, and defines the part of the program where a particular variable is accessible.- Ivaylo Gerchev 
 > 
 
-***Function and Block Scoping*** – function scopes are created for every function and often considered to be “local” scopes. Block scopes are what you get with if statements, for statements switch cases, etc. Var keyword doesn’t honor block scope (is global) whereas let and const honor both function and block scopes. 
+***Function and Block Scoping*** – function scopes are created for every function and are often considered to be “local” scopes. Block scopes are what you get with `if` statements, `for` statements, `switch` cases, etc. The `var` keyword doesn’t honor block scope (is global) whereas `let` and `const` honor both function and block scopes. 
 * [https://edgecoders.com/function-scopes-and-block-scopes-in-javascript-25bbd7f293d7](https://edgecoders.com/function-scopes-and-block-scopes-in-javascript-25bbd7f293d7)
 * [https://medium.com/@josephcardillo/the-difference-between-function-and-block-scope-in-javascript-4296b2322abe](https://medium.com/@josephcardillo/the-difference-between-function-and-block-scope-in-javascript-4296b2322abe)
 
-***Function expressions & declarations*** – function declaration defines a function variable without requiring assignment.  Function expressions are when a function is defines as part of a larger expression syntax (usually via variable assignment)
+***Function expressions & declarations*** – function declaration defines a function variable without requiring assignment.  Function expressions are when a function is defined as part of a larger expression syntax (usually via variable assignment)
 * [https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/)
 
 ***Composition functions*** 
@@ -140,16 +140,16 @@ I recently completed my mock technical interview and was faced with answering ra
 ***Functional Programming***  – a form of programming where you can pass functions as arguments to other functions and also return functions as values of a function. 
 * [https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad](https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad)
 
-***First Class-Functions*** – In javaScript - functions are a special type of objects, making them first-class citizens.
+***First Class-Functions*** – In JavaScript - functions are a special type of object, making them first-class citizens.
 * [https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad](https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad)
 
-***Arrow Functions*** – Introduced in ES6 – shorter syntax for defining functions and these functions do not have their own this, arguments or super – cannot be used for constructor functions. 
+***Arrow Functions*** – Introduced in ES6 – shorter syntax for defining functions and these functions do not have their own `this`, `arguments` or `super` – cannot be used for constructor functions. 
 * Syntax:  `const funcName = () => statement`
 * Implicitly returns statement if you don’t include {} block. 
 * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 * [https://codeburst.io/javascript-arrow-functions-for-beginners-926947fc0cdc](https://codeburst.io/javascript-arrow-functions-for-beginners-926947fc0cdc)
 
-***Spread Operator*** – syntax` …` Can be used in function arguments, array literals or objects.
+***Spread Operator*** – syntax `…` Can be used in function arguments, array literals or objects.
 
 Example: 
 ```
@@ -181,11 +181,11 @@ console.log(rest);
 * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 * [https://wesbos.com/destructuring-objects/](https://wesbos.com/destructuring-objects/)
 
-***Template Strings/Literals*** – use back-ticks to define string and ${} define placeholders which can be embedded expressions or variables. 
+***Template Strings/Literals*** – use back-ticks to define string and `${}` define placeholders which can be embedded expressions or variables. 
 * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
 ## React
-***Virtual DOM and Diffing***– an object that represents the actual DOM. When we render a jSX element every virtual DOM element gets updated and then React compares the Virtual DOM to a snapshot of the virtual DOM before the update.  React figures out which virtual DOM elements have changed (Diff Algorithm) –then ONLY updates those object sin the Real DOM. 
+***Virtual DOM and Diffing***– an object that represents the actual DOM. When we render a JSX element every virtual DOM element gets updated and then React compares the Virtual DOM to a snapshot of the Virtual DOM before the update.  React figures out which Virtual DOM elements have changed (Diff Algorithm) –then ONLY updates those objects in the Real DOM. 
 * [https://www.codecademy.com/articles/react-virtual-dom](https://www.codecademy.com/articles/react-virtual-dom)
 * [https://reactjs.org/docs/faq-internals.html](https://reactjs.org/docs/faq-internals.html)
 
@@ -198,21 +198,21 @@ console.log(rest);
 * [https://reactjs.org/docs/uncontrolled-components.html](https://reactjs.org/docs/uncontrolled-components.html)
 * [https://reactjs.org/docs/forms.html](https://reactjs.org/docs/forms.html)
 
-***Class Component vs.Functional Component*** – functional Components are literally JS functions that take in props and return a React Element.  Class Componets iare ES6 classes that nherit from React Component moduel. Classes can have state AND inherit React Lifecycle methods. 
+***Class Component vs.Functional Component*** – Functional Components are literally JS functions that take in props and return a React Element.  Class Componets are ES6 classes that inherit from the React Component module. Classes can have state AND inherit React Lifecycle methods. 
 * [https://reactjs.org/docs/components-and-props.html](https://reactjs.org/docs/components-and-props.html)
 * [https://reactjs.org/docs/state-and-lifecycle.html](https://reactjs.org/docs/state-and-lifecycle.html)
 * [https://alligator.io/react/class-components/](https://alligator.io/react/class-components/)
 
-***Keys*** – special string attribute include when createding lists of elements – React uses them to determine which elements have changed, been added or removed. 
+***Keys*** – special string attribute included when creating lists of elements – React uses them to determine which elements have changed, been added or removed. 
 * [https://reactjs.org/docs/lists-and-keys.html](https://reactjs.org/docs/lists-and-keys.html)
 
-***Higher Order Components*** - component that returns another component with additional props passed in; for code reuse; an example being connect() method in Redux
+***Higher Order Components*** - component that returns another component with additional props passed in; for code reuse; an example being `connect()` method in Redux
 
-***React Lifecycle Methods*** – Available for class component that extend React.Component. Include render() which is required for each class component created. Others ommponly uses are ComponentDidMount(), ComponentWillUnmount(), ComponentWillUpdate(), et. 
+***React Lifecycle Methods*** – Available for class components that extend React.Component. Include `render()` which is required for each class component created. Other commonly usesd are `ComponentDidMount()`, `ComponentWillUnmount()`, `ComponentWillUpdate()`, et. 
 * [https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1](https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1)
 * [https://reactjs.org/docs/state-and-lifecycle.html](https://reactjs.org/docs/state-and-lifecycle.html)
 
-***Refs in React*** – provide way to access DOM nodes or React elents cerated in the render method. They should not be overused. Typically used for managing focus, triggering animation, integrating with third art DOM libraries. 
+***Refs in React*** – provides way to access DOM nodes or React elements created in the render method. They should not be overused. Typically used for managing focus, triggering animation, integrating with third art DOM libraries. 
 * [https://reactjs.org/docs/refs-and-the-dom.html](https://reactjs.org/docs/refs-and-the-dom.html)
 
 ***JSX*** – syntax extension of JavaScript used by React. 
