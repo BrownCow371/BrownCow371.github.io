@@ -6,7 +6,7 @@ permalink:  technical_interview_-_terms_to_know
 ---
 
 
-I recently completed my mock technical interview and was faced with answering rapid fire questions about common programming/JavaScript terms and discovered that I prattle when giving descriptions (which takes away time from the code challenges where one would want more time to work with). Part of the feedback from my interview was to come up with concise (quick) definitions/descriptions for commonly asked about terms. As practice, and for posterity, I’ve put together a list of definitions (with resource links) here:
+I recently completed my mock technical interview and was faced with answering rapid fire questions about common programming/JavaScript terms and discovered that I prattle when giving descriptions (which takes away time from the code challenges where one would want more time to work with). Part of the feedback from my interview was to come up with concise (quick) definitions/descriptions for commonly asked about terms. As practice, and for posterity, I’ve put together a list of definitions (with resource links) here.  This is a growing list that I'll continue to add to as I encounter other terms during interviews. 
 
 ## CSS
 ***Sprites*** – combination of multiple images into a single image file to help with performance (several images loaded with a single HTTP request). 
@@ -27,7 +27,7 @@ I recently completed my mock technical interview and was faced with answering ra
 * [http://www.htmldog.com/guides/html/intermediate/spandiv/](http://www.htmldog.com/guides/html/intermediate/spandiv/)
 * [https://www.quora.com/What-is-difference-between-span-and-p](https://www.quora.com/What-is-difference-between-span-and-p)
 
-***Block vs. inline*** – block level elements start on a new line. In-line elements will not start anew line. Block elements take up the full width of available space while in-line only consume the amount of space needed for the element.  
+***Block vs. inline*** – block level elements start on a new line. In-line elements will not start a new line. Block elements take up the full width of available space while in-line only consume the amount of space needed for the element.  
 * [https://coursework.vschool.io/html-block-vs-inline/](https://coursework.vschool.io/html-block-vs-inline/)
 
 ## JavaScript
@@ -48,7 +48,7 @@ I recently completed my mock technical interview and was faced with answering ra
 ***Callbacks*** – functions passed into other functions as arguments
 * [https://developer.mozilla.org/en-US/docs/Glossary/Callback_function](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
 
-***Var/Let/Const*** – `var` declarations are globally scope when a `var `variable is declared outside of a function or within a block (`var` variables are not block-scoped). A `var` variable is function scoped if declared inside a function.  `var` variables can be re-declared and updated (can call `var greeter `twice without an error). `let` and `const` variables cannot be re-declared. They are both block scoped. They also will throw an error if they are declared after they are used in a function (they are still hoisted, but not initialized).  You cannot declare a `const` variable without also assigning it (it cannot be updated). . 
+***Var/Let/Const*** – `var` declarations are globally scoped when a `var `variable is declared outside of a function or within a block (`var` variables are not block-scoped). A `var` variable is function scoped if declared inside a function.  `var` variables can be re-declared and updated (can call `var greeter `twice without an error). `let` and `const` variables cannot be re-declared. They are both block scoped. They also will throw an error if they are declared after they are used in a function (they are still hoisted, but not initialized).  You cannot declare a `const` variable without also assigning it (it cannot be updated). . 
 * [https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e](https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e)
 * [https://dzone.com/articles/javascript-difference-between-var-let-and-const-ke](https://dzone.com/articles/javascript-difference-between-var-let-and-const-ke)
 * [https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75](https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75)
@@ -83,18 +83,14 @@ I recently completed my mock technical interview and was faced with answering ra
 * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 * [https://www.digitalocean.com/community/tutorials/understanding-prototypes-and-inheritance-in-javascript](https://www.digitalocean.com/community/tutorials/understanding-prototypes-and-inheritance-in-javascript)
 
-***Arity*** – the number of arguments a function takes.
-* [https://en.wikipedia.org/wiki/Arity](https://en.wikipedia.org/wiki/Arity)
-
-***Function Currying*** – the process of breaking down a function into a series of functions that each take a single argument. 
-* [https://medium.com/@kbrainwave/currying-in-javascript-ce6da2d324fe](https://medium.com/@kbrainwave/currying-in-javascript-ce6da2d324fe)
-* [https://hackernoon.com/currying-in-js-d9ddc64f162e](https://hackernoon.com/currying-in-js-d9ddc64f162e)
-* [https://www.codementor.io/michelre/currying-in-javascript-g6212s8qv](https://www.codementor.io/michelre/currying-in-javascript-g6212s8qv)
-* [https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8](https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8)
-
-***Object-Oriented Programming/Constructor Functions*** – a constructor function is one that you would use the `new` keyword to invoke/create a new object of the same type. You typically declare the function name with an uppercase word. 
+***Object-Oriented Programming in JavaScript*** - As noted above, JavaScript is a prototype-based language so Object type properties and methods are acquired through a generalized prototye object. With ES6, developers have the ability to define "Classes" using a class syntax. Note that these classes still define prototype-based classes. 
+* [https://javascript.info/class](https://javascript.info/class)
+* [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 * [https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
-* [https://scotch.io/tutorials/object-oriented-programming-in-javascript](https://scotch.io/tutorials/object-oriented-programming-in-javascript)
+*  [https://scotch.io/tutorials/object-oriented-programming-in-javascript](https://scotch.io/tutorials/object-oriented-programming-in-javascript)
+
+***Constructor Functions*** – a constructor function is one that you would use to create a new "object type". You would use the `new` keyword to invoke/create a new object of the same type via the Constructor function. You typically declare the function name with an uppercase word. 
+
 * [https://www.w3schools.com/js/js_object_constructors.asp](https://www.w3schools.com/js/js_object_constructors.asp)
 * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)
 
@@ -115,6 +111,7 @@ I recently completed my mock technical interview and was faced with answering ra
 > – John Resig
 
 * [https://lucybain.com/blog/2014/js-use-strict/](https://lucybain.com/blog/2014/js-use-strict/)
+* [https://www.toptal.com/javascript/interview-questions](https://www.toptal.com/javascript/interview-questions)
 
 ***Variable Scoping*** 
 > The scope of a variable is controlled by the location of the variable declaration, and defines the part of the program where a particular variable is accessible.- Ivaylo Gerchev 
@@ -127,31 +124,46 @@ I recently completed my mock technical interview and was faced with answering ra
 ***Function expressions & declarations*** – function declaration defines a function variable without requiring assignment.  Function expressions are when a function is defined as part of a larger expression syntax (usually via variable assignment)
 * [https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/)
 
-***Composition functions*** 
-> Function composition is a mathematical concept that allows you to combine two or more functions into a new function.
-
-* [https://hackernoon.com/javascript-functional-composition-for-every-day-use-22421ef65a10](https://hackernoon.com/javascript-functional-composition-for-every-day-use-22421ef65a10)
-* [https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0)
-
 ***High order functions*** – functions that take functions as arguments or return them. 
 * [https://eloquentjavascript.net/05_higher_order.html](https://eloquentjavascript.net/05_higher_order.html)
-* [https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad](https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad)
-
-***Functional Programming***  – a form of programming where you can pass functions as arguments to other functions and also return functions as values of a function. 
 * [https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad](https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad)
 
 ***First Class-Functions*** – In JavaScript - functions are a special type of object, making them first-class citizens.
 * [https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad](https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad)
 
 ***Arrow Functions*** – Introduced in ES6 – shorter syntax for defining functions and these functions do not have their own `this`, `arguments` or `super` – cannot be used for constructor functions. 
-* Syntax:  `const funcName = () => statement`
-* Implicitly returns statement if you don’t include {} block. 
+
+Syntax:  `const funcName = () => statement` 
+* Note - they implicitly return statement if you don’t include `{}` block
+
 * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 * [https://codeburst.io/javascript-arrow-functions-for-beginners-926947fc0cdc](https://codeburst.io/javascript-arrow-functions-for-beginners-926947fc0cdc)
 
-***Spread Operator*** – syntax `…` Can be used in function arguments, array literals or objects.
+***Functional Programming***  
+> Functional programming (often abbreviated FP) is the process of building software by composing pure functions, avoiding shared state, mutable data, and side-effects. Functional programming is declarative rather than imperative, and application state flows through pure functions. Contrast with object oriented programming, where application state is usually shared and colocated with methods in objects. - Eric Elliott
 
-Example: 
+* [ https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
+
+***Arity*** – the number of arguments a function takes.
+* [https://en.wikipedia.org/wiki/Arity](https://en.wikipedia.org/wiki/Arity)
+
+***Function Currying*** – the process of breaking down a function into a series of functions that each take a single argument. 
+* [https://medium.com/javascript-scene/curry-and-function-composition-2c208d774983](https://medium.com/javascript-scene/curry-and-function-composition-2c208d774983)
+* [https://medium.com/@kbrainwave/currying-in-javascript-ce6da2d324fe](https://medium.com/@kbrainwave/currying-in-javascript-ce6da2d324fe)
+* [https://hackernoon.com/currying-in-js-d9ddc64f162e](https://hackernoon.com/currying-in-js-d9ddc64f162e)
+* [https://www.codementor.io/michelre/currying-in-javascript-g6212s8qv](https://www.codementor.io/michelre/currying-in-javascript-g6212s8qv)
+* [https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8](https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8)
+
+***Composition functions*** 
+> Function composition is a mathematical concept that allows you to combine two or more functions into a new function.
+
+* [https://www.codementor.io/michelre/use-function-composition-in-javascript-gkmxos5mj](https://www.codementor.io/michelre/use-function-composition-in-javascript-gkmxos5mj)
+* [https://hackernoon.com/javascript-functional-composition-for-every-day-use-22421ef65a10](https://hackernoon.com/javascript-functional-composition-for-every-day-use-22421ef65a10)
+* [https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0)
+
+***Spread Operator*** – syntax `…` Can be used in function arguments, or with array literals or objects. Purpose is to expand an array or object in places where zero or more arguments/elements are expected. 
+
+*Example:* 
 ```
 const array = [1, 2];
 const array2 = [...array, 3, 4];
@@ -163,6 +175,7 @@ Console.log(array2) // [1, 2, 3, 4]
 ***Destructuring*** 
 > JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.  - MDN
 
+*Example:* 
 ```
 let [a, b] = [10, 20];
 
@@ -208,7 +221,7 @@ console.log(rest);
 
 ***Higher Order Components*** - component that returns another component with additional props passed in; for code reuse; an example being `connect()` method in Redux
 
-***React Lifecycle Methods*** – Available for class components that extend React.Component. Include `render()` which is required for each class component created. Other commonly usesd are `ComponentDidMount()`, `ComponentWillUnmount()`, `ComponentWillUpdate()`, et. 
+***React Lifecycle Methods*** – Available for class components that extend React.Component. Include `render()` which is required for each class component created. Other commonly uses are `ComponentDidMount()`, `ComponentWillUnmount()`, `ComponentWillUpdate()`, etc. 
 * [https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1](https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1)
 * [https://reactjs.org/docs/state-and-lifecycle.html](https://reactjs.org/docs/state-and-lifecycle.html)
 
