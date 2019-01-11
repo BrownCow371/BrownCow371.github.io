@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "HTML5 - What's new?"
-date:       2019-01-11 16:14:17 +0000
+date:       2019-01-11 11:14:18 -0500
 permalink:  html5_-_whats_new
 ---
 
@@ -11,7 +11,7 @@ I was recently asked in a technical interview to list a few new input types incl
 Per MDN, HTML5 is both a major release of HTML with new features, and also a set of new technologies (hence it is sometimes referred to as HTML5 & friends).  There is quite a large gambit of new elements, attributes and behaviors as described on [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5). 
 
 If you are looking for a quick cheat sheet in the subject you can check out [WPKube's](https://www.wpkube.com/html5-cheat-sheet/).
-#### Some new structure element tags include: 
+### Some new structure element tags include: 
 * [`<article>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article) 
 * [`<canvas>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)
 * [`<figure>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
@@ -21,10 +21,10 @@ If you are looking for a quick cheat sheet in the subject you can check out [WPK
 * [`<section>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)
 * [`<time>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time)
 * [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
-#### New form types include:
+### New form types include:
 * [`<datalist>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist) - used to provide a drop-down list that filters (auto-complete) as users input data. 
 * [`<output>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output) - used to output the result of a calculation. 
-#### New input types include:
+### New input types include:
 * ***color*** - provides a color picker in supporting browsers
 * ***date*** - provides a date picker in supporting browsers
 * ***datetime-local*** - provides a date and time picker without a time-zone in supporting browsers
@@ -40,7 +40,7 @@ If you are looking for a quick cheat sheet in the subject you can check out [WPK
 * ***week*** - provides a week.year picker in supporting browsers
 
 See more details [here](https://www.w3schools.com/html/html_form_input_types.asp).
-#### And new input attributes include:
+### And new input attributes include:
 * ***autocomplete*** - specifies if an input field should have autocomplete on or off
 * ***autofocus*** - specifies if the input field should have focus when the page is loaded.
 * ***form*** - specified which form(s) (by id) an input field belogs to. 
