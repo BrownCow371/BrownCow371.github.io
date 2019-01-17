@@ -56,7 +56,7 @@ See more details [here](https://www.w3schools.com/html/html_form_input_types.asp
 * ***list*** - used for `<datalist>` elements.
 * ***min and max*** -specifies the min and max values for an input element. 
 * ***multiple*** - specifies if the user is allowed to enter more than one value in the input field. Works with email and file input types. 
-* ***pattern***  - specifies a regular expression that the <input> element's value is checked against - works with text, search, url, tel, email, and password input types. 
+* ***pattern***  - specifies a regular expression that the `<input>` element's value is checked against - works with text, search, url, tel, email, and password input types. 
 * ***placeholder*** - used to provide a hint that describes the expected value of an input field. 
 * ***required*** - specifies that the input field is required before the form can be submitted. 
 * ***step*** - specifies the intervals allowed for an input. For example if you list 5, then -5, 0, 5, 10 are all allowable input values. 
