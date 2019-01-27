@@ -56,10 +56,7 @@ At first I started using CSS Grids, but I was having trouble getting the data to
      align-content: start;
 }
 ```
-4.	Inside the first column `<div>`, add your header INSIDE a `<div>`. like so:
-```
-<div><h1>Header 1</h1</div>
-```
+4.	Inside the first column `<div>`, add your header INSIDE a `<div>`.
 5.	Next add a `<div>` after your header `<div>` that has a class of `“grid-col-two”` (in the event that you want 2 columns of data under your header). The CSS for this class should be set to:
 ```
 .grid-col-two {
