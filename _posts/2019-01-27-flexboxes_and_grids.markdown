@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Flexboxes and Grids"
-date:       2019-01-27 20:03:04 +0000
+date:       2019-01-27 15:03:05 -0500
 permalink:  flexboxes_and_grids
 ---
 
@@ -70,6 +70,6 @@ At first I started using CSS Grids, but I was having trouble getting the data to
 6.	Inside this two column `<div>` add a `<div>` for each item you want listed keeping in mind that the items will alternate between the left and right columns. 
 7.	Repeat the `“grid-column”` `<div>` format for each of the three columns of data. 
 
-[See example code in CodePen]( https://codepen.io/browncow371/pen/qgZYWN)
+[See example code in CodePen](https://codepen.io/browncow371/pen/qgZYWN)
 
 
