@@ -1,25 +1,24 @@
 ---
 layout: post
 title:      "A deeper understanding of Thunk"
-date:       2019-02-11 17:36:49 +0000
+date:       2019-02-11 12:36:49 -0500
 permalink:  a_deeper_understanding_of_thunk
 ---
 
 
 > Redux Thunk middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. The inner function receives the store methods dispatch and getState as parameters. - NPM
 
-Thunk is a generic term  - it is a function that wraps an expression to delay its evaluation. 
+The work thunk is a generic term used to describe a function that wraps an expression to delay its evaluation. 
 
 **Example:**
 ```
-// So instead of writing this:
 let y = 5 * 6
 
-//You’d write this:
+//the above expression can be wrapped in a function to become a thunk:
 let bar = () => 5 * 6;
 ```
 
-In Redux, actions are just objects that include a “type” key and whatever else you need to include. Action creators are functions that return action objects (adds a layer of abstraction and makes actions less error prone). So instead of writing an action, you call a function that returns the action object for you.  
+In Redux, actions are just objects that include a “type” key and whatever other data you need for that action. Action creators are functions that return action objects. They add a layer of abstraction and makesactions less error prone by allowing you to use one action creator evertime you want a specific action. So instead of writing an action, you call a function that returns the action object for you.  
 
 ```
 function actionCreator(){
@@ -33,7 +32,7 @@ function actionCreator(){
 
 > The synchronous and pure flow of data through Redux’s components is well-defined with distinct, simple roles. Action creators create objects → objects are dispatched to the store → the store invokes reducers → reducers generate new state → listeners are notified of state updates. - Gabriel Lebec
 
-We use Thunk inside action creators so that our reducers remain pure functions even when the action creator is asynchronous (ie anything impure will be wrapped in thunk). Thunk looks at every action and if it is a function, it calls that function. 
+We use Thunk inside action creators so that our reducers remain pure functions even when the action creator is asynchronous (i.e. anything impure will be wrapped in a thunk). The action creator is returning a function (which is pure as a reutrn value). Note that the invocation of that function may not be pure (like in the case of an asynchronous call to an API), but the function itself as a return value is. In addition to making the return value of the action creator pure, Thunk looks at every action called and if it returns a function, it calls that function (so that it doesn't have to be invoked manually).  
 
 **Example:**
 
@@ -54,8 +53,11 @@ export function fetchActivities() {
 }
 ```
 
+To set up Thunk, you need to first install it:
 
-You need to apply Thunk to your reducer using applyMiddleware. This ensures that whenever a value gets dispatched to the redux Store, it first passes through the provided middleware (in this case, Thunk):
+`npm install --save redux-thunk`
+
+Then you need to import it and apply it to your reducer using applyMiddleware (which also needs to be imported). This ensures that whenever a value gets dispatched to the redux Store, it first passes through the provided middleware (in this case, Thunk):
 
 ```
 import { createStore, applyMiddleware } from 'redux';
@@ -67,7 +69,6 @@ const store = createStore(
   applyMiddleware(thunk)
 );
 ```
-
 
 Note that if you need to add multiple middlewares (like thunk AND dev tools) to your store, you need to also use compose. 
 
